@@ -1,4 +1,6 @@
-# My Dotfiles (A collection of configs, assets and preferences on tools I use)
+# My Dotfiles
+
+(A collection of configs, assets and preferences on tools I use)
 
 ## VSCode
 
@@ -6,7 +8,7 @@ Settings.json is heavily based on a config I saw on r/vscode: [jsmlls/settings.j
 
 ## Assets
 
-### Wallpaper
+### Wallpapers
 
 Various wallpapers mainly from https://wallhaven.cc/
 
