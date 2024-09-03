@@ -1,11 +1,13 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "animations.Install-Method": "Apc Customize UI++",
   "breadcrumbs.enabled": false,
   "cSpell.language": "en-GB",
   "debug.showVariableTypes": true,
@@ -45,7 +47,6 @@
     "rgba(193, 158, 224,0.05)"
   ],
   "markdown.extension.preview.autoShowPreviewToSide": true,
-  "material-icon-theme.files.color": "#90a4ae",
   "material-icon-theme.folders.color": "#e0af68",
   "material-icon-theme.folders.theme": "specific",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -56,7 +57,7 @@
   "window.title": "${activeEditorMedium}",
   "window.titleBarStyle": "custom",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
