@@ -1,16 +1,18 @@
 {
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
-  "cSpell.language": "en-GB",
+  "cSpell.language": "en-GB,en-US",
+  "cSpell.userWords": ["freezed", "WCAG"],
+  "chaliceIcons.showArrows": true,
+  "dart.debugExternalPackageLibraries": true,
+  "dart.openDevTools": "flutter",
+  "dart.showTodos": false,
   "debug.showVariableTypes": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorWidth": 2,
@@ -34,21 +36,29 @@
   "git.allowForcePush": true,
   "git.autofetch": true,
   "git.closeDiffOnOperation": true,
+  "git.confirmSync": false,
   "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
   "indentRainbow.colors": [
-    "rgba(98, 71, 170,0.15)",
-    "rgba(114, 81, 181,0.15)",
-    "rgba(129, 90, 192, 0.15)",
-    "rgba(145, 99, 203,0.15)",
-    "rgba(160, 108, 213,0.15)",
-    "rgba(177, 133, 219,0.15)",
-    "rgba(193, 158, 224,0.15)",
-    "rgba(193, 158, 224,0.1)",
-    "rgba(193, 158, 224,0.05)"
+    "rgba(187,154,247,0.10)", // bb9af7 - Terminal Magenta
+    "rgba(170,158,245,0.10)", // Transition
+    "rgba(155,162,243,0.10)", // Transition
+    "rgba(122,162,247,0.10)", // 7aa2f7 - Terminal Blue
+    "rgba(107,175,249,0.10)", // Transition
+    "rgba(92,188,251,0.10)", // Transition
+    "rgba(125,207,255,0.10)", // 7dcfff - Terminal Cyan
+    "rgba(92,188,251,0.10)", // Transition back
+    "rgba(107,175,249,0.10)", // Transition
+    "rgba(122,162,247,0.10)", // Back through blue
+    "rgba(155,162,243,0.10)", // Transition
+    "rgba(170,158,245,0.10)" // Back towards magenta
   ],
+  "liveServer.settings.donotShowInfoMsg": true,
   "markdown.extension.preview.autoShowPreviewToSide": true,
+  "material-icon-theme.files.color": "#90a4ae",
   "material-icon-theme.folders.color": "#e0af68",
   "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.saturation": 1,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.stickyScroll.enabled": true,
   "window.commandCenter": false,
@@ -58,8 +68,12 @@
   "window.titleBarStyle": "custom",
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.experimental.enableNewProfilesUI": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "application.shellEnvironmentResolutionTimeout": 20,
+  "files.autoSave": "onFocusChange"
+
 }
