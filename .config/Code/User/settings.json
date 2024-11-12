@@ -2,13 +2,21 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "application.shellEnvironmentResolutionTimeout": 20,
   "cSpell.language": "en-GB,en-US",
-  "cSpell.userWords": ["freezed", "WCAG"],
-  "chaliceIcons.showArrows": true,
-  "dart.debugExternalPackageLibraries": true,
+  "cSpell.userWords": [
+    "freezed",
+    "WCAG"
+  ],
   "dart.openDevTools": "flutter",
   "dart.showTodos": false,
   "debug.showVariableTypes": true,
@@ -20,6 +28,7 @@
   "editor.fontLigatures": true,
   "editor.fontVariations": true,
   "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 1200,
@@ -33,6 +42,7 @@
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmPasteNative": false,
+  "files.autoSave": "onFocusChange",
   "git.allowForcePush": true,
   "git.autofetch": true,
   "git.closeDiffOnOperation": true,
@@ -60,6 +70,7 @@
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.saturation": 1,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.stickyScroll.enabled": true,
   "window.commandCenter": false,
   "window.customTitleBarVisibility": "auto",
@@ -67,13 +78,10 @@
   "window.title": "${activeEditorMedium}",
   "window.titleBarStyle": "custom",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.experimental.enableNewProfilesUI": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none",
-  "application.shellEnvironmentResolutionTimeout": 20,
-  "files.autoSave": "onFocusChange"
-
+  "workbench.startupEditor": "none"
 }
