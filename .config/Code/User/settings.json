@@ -13,10 +13,7 @@
   },
   "application.shellEnvironmentResolutionTimeout": 20,
   "cSpell.language": "en-GB,en-US",
-  "cSpell.userWords": [
-    "freezed",
-    "WCAG"
-  ],
+  "cSpell.userWords": ["freezed", "WCAG"],
   "dart.openDevTools": "flutter",
   "dart.showTodos": false,
   "debug.showVariableTypes": true,
@@ -50,18 +47,18 @@
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
   "indentRainbow.colors": [
-    "rgba(187,154,247,0.10)", // bb9af7 - Terminal Magenta
-    "rgba(170,158,245,0.10)", // Transition
-    "rgba(155,162,243,0.10)", // Transition
-    "rgba(122,162,247,0.10)", // 7aa2f7 - Terminal Blue
-    "rgba(107,175,249,0.10)", // Transition
-    "rgba(92,188,251,0.10)", // Transition
-    "rgba(125,207,255,0.10)", // 7dcfff - Terminal Cyan
-    "rgba(92,188,251,0.10)", // Transition back
-    "rgba(107,175,249,0.10)", // Transition
-    "rgba(122,162,247,0.10)", // Back through blue
-    "rgba(155,162,243,0.10)", // Transition
-    "rgba(170,158,245,0.10)" // Back towards magenta
+    "rgba(100,190,255,0.12)",
+    "rgba(120,170,255,0.12)",
+    "rgba(140,150,255,0.12)",
+    "rgba(160,130,255,0.12)",
+    "rgba(180,110,255,0.12)",
+    "rgba(200,90,255,0.12)",
+    "rgba(220,70,255,0.12)",
+    "rgba(220,70,255,0.12)",
+    "rgba(200,90,255,0.12)",
+    "rgba(180,110,255,0.12)",
+    "rgba(160,130,255,0.12)",
+    "rgba(100,190,255,0.12)"
   ],
   "liveServer.settings.donotShowInfoMsg": true,
   "markdown.extension.preview.autoShowPreviewToSide": true,
