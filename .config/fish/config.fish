@@ -1,5 +1,5 @@
 if status is-interactive
-    #----Custom additions----#
+    set -g fish_greeting
 
     # Quality of Life
     function refish
