@@ -1,0 +1,98 @@
+##---------- Keybindings for berry ----------##
+
+# Terminal (Kitty)
+super + Return
+	kitty
+
+##---------- Rofi Launcher & Menus ----------##
+# Rofi App Launcher
+super + d
+	rofi -show run
+
+super + Tab
+	rofi -show window
+
+##---------- Applications ----------##
+
+# Launch Apps
+super + {f}
+	{thunar}
+
+# Terminal Apps
+ctrl + alt + {h}
+	kitty -e {htop}
+
+# Lockscreen
+super + l
+	betterlockscreen -l dim
+
+##---------- System Keys ----------##
+
+## Volume control
+XF86Audio{RaiseVolume,LowerVolume}
+	pactl{ set-sink-volume @DEFAULT_SINK@ +10%, set-sink-volume @DEFAULT_SINK@ -10%}
+
+XF86AudioMute
+	pactl set-source-mute @DEFAULT_SOURCE toggle
+	
+# Music control
+XF86Audio{Next,Prev,Play,Stop}
+	mpc {next,prev,toggle,stop}
+
+#---------- Berry Hotkeys --------##
+
+super + alt +  {Left, Down, Up, Right}
+    berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
+
+super + ctrl + {Left, Down, Up, Right}
+    berryc window_move {-50 0, 0 50, 0 -50, 50 0}
+
+super + Left
+    berryc snap_left
+
+super +  Right
+    berryc snap_right
+
+super +  Up
+    berryc window_monocle
+
+super +  Down
+    berryc window_resize_absolute 1000 650 && berryc window_center
+
+super + {1-9}
+    berryc switch_workspace {0-9}
+
+super + 0 
+    berryc switch_workspace 9
+
+super + shift + {1-9}
+    berryc send_to_workspace {0-9}
+
+super + shift + 0 
+    berryc send_to_workspace 9 
+
+super + space
+    berryc fullscreen
+
+super + t
+    berryc toggle_decorations
+
+alt + Tab
+    berryc cycle_focus
+
+super + c
+    berryc window_center
+
+super + q
+    berryc window_close
+
+super + shift + alt + q
+    berryc quit
+
+# Mouse Buttons
+~button1
+    berryc pointer_focus
+
+# Reload sxhkd configuration and autostart
+super + shift + alt + r
+	pkill -USR1 -x sxhkd && $HOME/.config/berry/autostart

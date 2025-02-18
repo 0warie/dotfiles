@@ -1,0 +1,37 @@
+#!/bin/bash
+
+
+##---------- BerryRC ----------##
+
+BACKGROUND_FOCUS=24283b
+BACKGROUND_UNFOCUSED=1a1b26
+
+FOREGROUND=a9b1d6
+
+
+# Set decoration geometry
+berryc border_width       0
+berryc inner_border_width 0
+berryc title_height       30
+berryc edge_gap           50 20 20 20
+
+# Set decoration colours
+berryc focus_color         $BACKGROUND_FOCUS
+berryc unfocus_color       $BACKGROUND_UNFOCUSED
+
+berryc inner_focus_color   $BACKGROUND_FOCUS
+berryc inner_unfocus_color $BACKGROUND_UNFOCUSED
+
+berryc text_focus_color    $FOREGROUND
+berryc text_unfocus_color  $BACKGROUND_UNFOCUSED
+
+# Other options
+berryc smart_place "true"
+berryc draw_text   "true"
+berryc edge_lock   "true"
+berryc set_font    "Comic Code-10"
+
+##---------- Program Autostart ----------##
+
+# Launch polybar
+$HOME/.config/polybar/launch.sh
