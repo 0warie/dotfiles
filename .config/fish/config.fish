@@ -1,17 +1,39 @@
 if status is-interactive
-    set -g fish_greeting
+    #----Custom additions----#
 
     # Quality of Life
     function refish
         source ~/.config/fish/config.fish
     end
+    
+
+    # Unix Command Aliases
+    alias l='ls -CF'
+    alias la='ls -A'
+    alias ll='ls -alF'
+
+    # Git Aliases
+    alias g='git'
+    alias gp='git pull'
+    alias gpr='git pull --rebase'
+    alias gs='git status'
+    alias gcm='git commit -m'
+    alias gca='git commit --amend'
+    alias gcan='git commit --amend --no-edit' 
+    alias gsw='git switch'
 
     # Flutter / FVM Configuration
+    export PATH="$PATH:$HOME/fvm/default/bin"
     export PATH="$PATH:$HOME/.pub-cache/bin"
 
     # FVM Flutter and Dart Aliases
     alias f='fvm flutter'
     alias d='fvm dart'
+
+    # Flutter Utility
+    alias f-ios-clean='fish -c cd ios && rm -rf Pods/ Podfile.lock && pod install --repo-update'
+    alias fre='fish -c fvm flutter clean && fvm flutter pub get'
+    alias fbr='fvm dart run build_runner build --delete-conflicting-outputs'
 
     # Bulk Repository Management
     ## Git Operations
@@ -24,11 +46,7 @@ if status is-interactive
 
     # NPM Utility
     alias npm-build-pack='npm run build && npm pack'
-
-    # Flutter Utility
-    alias f-ios-clean='fish -c cd ios && rm -rf Pods/ Podfile.lock && pod install --repo-update'
-    alias f-refresh='fish -c fvm flutter clean && fvm flutter pub get && cd ./ios && pod install --repo-update'
-    alias f-build-run='fvm dart run build_runner build --delete-conflicting-outputs'
 end
 
 starship init fish | source
+enable_transience
