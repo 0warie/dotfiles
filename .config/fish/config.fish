@@ -3,12 +3,7 @@ if status is-interactive
     #* Unix Command Aliases
     alias l='ls -CF'
     alias la='ls -A'
-    alias ll='ls -alF'
-
-    #* Git Aliases
-    alias git-root='cd $(git rev-parse --show-toplevel)'
-
-    
+    alias ll='ls -alF'    
 
     #* Flutter / FVM Configuration
     export PATH="$PATH:$HOME/fvm/default/bin"
