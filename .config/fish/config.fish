@@ -6,14 +6,9 @@ if status is-interactive
     alias ll='ls -alF'
 
     #* Git Aliases
-    alias g='git'
-    alias gp='git pull'
-    alias gpr='git pull --rebase'
-    alias gs='git status'
-    alias gcm='git commit -m'
-    alias gca='git commit --amend'
-    alias gcan='git commit --amend --no-edit' 
-    alias gsw='git switch'
+    alias git-root='cd $(git rev-parse --show-toplevel)'
+
+    
 
     #* Flutter / FVM Configuration
     export PATH="$PATH:$HOME/fvm/default/bin"
